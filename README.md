@@ -1,6 +1,6 @@
 # HomeLab
 
-Personal homelab — self-hosted infrastructure, AI inference, and security research.
+Personal homelab: self-hosted infrastructure, AI inference, and security research.
 
 ---
 
@@ -17,7 +17,7 @@ Personal homelab — self-hosted infrastructure, AI inference, and security rese
 | PSU | 650 W fully modular (850 W upgrade staged) |
 | Form factor | ATX open-air test bench |
 
-### Hypervisor — Proxmox VE 9.0
+### Hypervisor: Proxmox VE 9.0
 
 Runs headless at `192.168.1.100`. All VMs live on `local-lvm` (LVM-Thin, 815 GiB). Web UI on `:8006`.
 
@@ -28,7 +28,7 @@ Runs headless at `192.168.1.100`. All VMs live on `local-lvm` (LVM-Thin, 815 GiB
 | **Kali** (102) | Kali Linux | Bug hunting, recon, offensive security. Runs OpenClaw with AI agent integration. |
 | **AI-interface** (104) | Ubuntu Server 22.04 | Local AI inference via Ollama. Both GTX 1080s passed through via VFIO. |
 
-### Planned — NAS
+### Planned: NAS
 
 TrueNAS build with 4 drives (2×3 TB + 2×1 TB = 8 TB raw). Hardware acquired; build pending.
 
@@ -70,7 +70,7 @@ The Kali VM connects to the AI-interface VM over SSH to offload inference to the
 
 ---
 
-### OpenClaw — AI Agent Setup *(Kali VM)*
+### OpenClaw: AI Agent Setup *(Kali VM)*
 
 [OpenClaw](https://openclaw.ai) is installed on the Kali VM as the agent orchestration layer. Configured with:
 
@@ -80,7 +80,7 @@ The Kali VM connects to the AI-interface VM over SSH to offload inference to the
 
 ---
 
-### reconFTW — Full Recon Suite *(Kali VM)*
+### reconFTW: Full Recon Suite *(Kali VM)*
 
 reconFTW is installed and fully configured on the Kali VM with all optional tools. Used for authorized full-scope recon against targets, including `meu.edu.jo` (Middle East University — authorized scope).
 
@@ -114,7 +114,7 @@ Stack: Mailcow (Docker) — Postfix + Dovecot + DKIM + DMARC + spam filtering, a
 
 ---
 
-### OpenRA — Combined Arms AI *(local, Windows)*
+### OpenRA: Combined Arms AI *(local, Windows)*
 
 Custom bot personality for OpenRA Red Alert (Combined Arms mod).
 
