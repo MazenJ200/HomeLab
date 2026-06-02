@@ -79,9 +79,9 @@ The Kali VM offloads all inference to the dual-GPU Ollama instance on the AI-int
 
 [Hermes Agent](https://github.com/NousResearch/hermes-agent) (Nous Research) is the agent layer on the Kali VM, replacing the previous OpenClaw setup. It runs as a systemd-user gateway service and provides:
 
-- **Telegram control** — default-deny allowlist; send `hunt <target>` to launch the full pipeline and receive reports back in chat.
-- **Local-first models** — Ollama on the AI-interface VM via the OpenAI-compatible endpoint, with cloud fallbacks optional.
-- **Custom skills** — `run-hunt` (drives the pipeline), `mr-rob` (exploit-execution persona), and `godmode`.
+- **Telegram control**: default-deny allowlist; send `hunt <target>` to launch the full pipeline and receive reports back in chat.
+- **Local-first models**: Ollama on the AI-interface VM via the OpenAI-compatible endpoint, with cloud fallbacks optional.
+- **Custom skills**: `run-hunt` (drives the pipeline), `mr-rob` (exploit-execution persona), and `godmode`.
 
 ---
 
