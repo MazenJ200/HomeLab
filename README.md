@@ -6,7 +6,7 @@ Personal homelab for self-hosted infrastructure, local AI inference, and hands-o
 
 ## Architecture
 
-Two independent Proxmox VE nodes on a 2.5GbE backbone, joined over Tailscale for remote access and managed from a single Proxmox Datacenter Manager dashboard.
+Two independent Proxmox VE nodes on a 2.5GbE backbone, joined over Tailscale for remote access, each managed from its own Proxmox web UI.
 
 | Node | Role | GPUs |
 |------|------|------|
@@ -70,7 +70,6 @@ Dell Precision 5820 (Intel Core i9-10900X, 10c/20t, 32 GB) running Proxmox VE 9.
 | **Web** (VM) | Debian + Docker host for two production websites, each in its own container, published through a Cloudflare Tunnel. |
 | **Jellyfin** (LXC) | Media stack with NVENC hardware transcoding on the host GPU. |
 | **Immich ML** (LXC) | Photo machine-learning worker (CLIP search, face recognition) on the host GPU. |
-| **PDM** (LXC) | Proxmox Datacenter Manager, one pane of glass across both nodes. |
 | **Monitoring** (LXC) | Beszel + Uptime Kuma with Telegram alerting across every node and service. |
 | **Apps** (LXC) | Homepage dashboard, What's Up Docker, and the manual update console. |
 
